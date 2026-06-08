@@ -35,6 +35,8 @@ vim.pack.add({
 
 Pass any mini.nvim module name as a key with its config as the value. Modules that fail to load are skipped with a warning. After setup, each loaded module is accessible directly on the returned table.
 
+Example configuration (I use this myself):
+
 ```lua
 local mini = require("mini-in-one").setup({
   icons      = {},
@@ -50,6 +52,8 @@ local mini = require("mini-in-one").setup({
   pick = {
     window = { config = { border = "rounded" } },
   },
+
+  -- Of cource you can also add other plugin definitions as you wish
 })
 
 -- Modules are accessible on the returned table
