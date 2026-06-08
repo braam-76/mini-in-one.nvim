@@ -46,6 +46,21 @@ local M = {}
 ---@field doc? table
 ---@field fuzzy? table
 ---@field test? table
+
+--- Sets up mini.nvim modules in one setup call
+---
+--- Usage:
+--- ```lua
+--- require("mini-in-one").setup({
+---   comment = {}, -- use defaults
+---   pick = {
+---     window = {
+---     config = { border = "rounded" },
+---   },
+--- })
+--- ```
+--- @param config MiniInOneConfig
+--- @return table M The module table with loaded mini modules
 function M.setup(config)
   for module_name, opts in pairs(config) do
     -- Try to load the module
