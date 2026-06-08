@@ -53,7 +53,7 @@ local mini = require("mini-in-one").setup({
     window = { config = { border = "rounded" } },
   },
 
-  -- Of cource you can also add other plugin definitions as you wish
+  -- Of course you can also add other plugin definitions as you wish
 })
 
 -- Modules are accessible on the returned table
