@@ -1,6 +1,6 @@
 # mini-in-one.nvim
 
-Configure all your [mini.nvim](https://github.com/echasnovski/mini.nvim) plugins in a single setup call, and access their modules directly from the returned table.
+Configure all your [mini.nvim](https://github.com/echasnovski/mini.nvim) plugins in a single table.
 
 > mini-in-one.nvim is just a thin wrapper. All credit for the actual functionality goes to [@echasnovski](https://github.com/echasnovski) and the [mini.nvim](https://github.com/echasnovski/mini.nvim) project — one of the most thoughtfully designed plugin ecosystems in Neovim.
 
