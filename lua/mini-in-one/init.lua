@@ -50,7 +50,6 @@ function M.setup(config)
   for module_name, opts in pairs(config) do
     -- Try to load the module
     local ok, module = pcall(require, "mini." .. module_name)
-    print(module_name, ok, module)
     if not ok then
       vim.notify("mini-in-one: module 'mini." .. module_name .. "' not found", vim.log.levels.WARN)
       goto continue
