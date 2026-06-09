@@ -2,7 +2,13 @@
 
 Configure all your [mini.nvim](https://github.com/echasnovski/mini.nvim) plugins in a single table.
 
+> [!NOTE]
 > mini-in-one.nvim is just a thin wrapper. All credit for the actual functionality goes to [@echasnovski](https://github.com/echasnovski) and the [mini.nvim](https://github.com/echasnovski/mini.nvim) project — one of the most thoughtfully designed plugin ecosystems in Neovim.
+
+### Why this plugin exists
+Because why not? I'm aware of the mini.nvim philosophy of keeping each module as its own standalone plugin. However, for someone like me who uses many mini.nvim modules (because they're excellent), configuring them in a single table is simply more convenient.
+
+You can also just copy the two source files — one for types and one for the setup function — directly into your own config without installing this plugin, but it's here if you need it. :)
 
 ## Requirements
 
