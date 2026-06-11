@@ -75,8 +75,6 @@ vim.keymap.set("n", "<leader>mb", pick.buffers,   { desc = "Pick buffers" })
 vim.keymap.set("n", "<leader>mh", pick.help,      { desc = "Pick help" })
 ```
 
-Any module listed in mini.nvim can be used as a key. Passing an empty table `{}` uses that module's default config.
-
 ## License
 
 MIT — see [LICENSE](LICENSE). This project is not affiliated with or endorsed by [@echasnovski](https://github.com/echasnovski).
