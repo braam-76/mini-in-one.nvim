@@ -39,15 +39,20 @@ vim.pack.add({
 
 ## Usage
 
-Pass any mini.nvim module name as a key with its config as the value. Modules that fail to load are skipped with a warning. After setup, each loaded module is accessible directly on the returned table.
+Pass any mini.nvim module name as a key with any of folowing values:
+- "defaults" - use default config of that module (same as `require("mini.module_name").setup()`, notice that there is no empty table in setup())
+- {...} - use custom configuration for that module
+
+Modules that fail to load are skipped with a warning. After setup, each loaded module is accessible directly on the returned table.
 
 Example configuration (I use this myself):
 
 ```lua
+---@type MiniInOne
 local mini = require("mini-in-one").setup({
-  icons      = {},
-  pairs      = {},
-  surround   = {},
+  icons      = "defaults",
+  pairs      = "defaults",
+  surround   = "defaults",
   ai = {
     mappings = { around_next = "aa", inside_next = "ii" },
     n_lines  = 500,

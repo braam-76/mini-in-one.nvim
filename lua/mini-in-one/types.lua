@@ -1,49 +1,49 @@
 ---@class MiniInOneConfig
----@field ai? table             Extend and create a/i textobjects
----@field align? table          Align text interactively
----@field comment? table        Comment lines
----@field completion? table     Completion and signature help
----@field keymap? table         Special key mappings
----@field move? table           Move any selection in any direction
----@field operators? table      Text edit operators
----@field pairs? table          Autopairs
----@field snippets? table       Manage and expand snippets
----@field splitjoin? table      Split and join arguments
----@field surround? table       Surround actions
----@field basics? table         Common configuration presets
----@field bracketed? table      Go forward/backward with square brackets
----@field bufremove? table      Remove buffers
----@field clue? table           Show next key clues
----@field cmdline? table        Command line tweaks
----@field deps? table           Plugin manager
----@field diff? table           Work with diff hunks
----@field extra? table          Extra ‘mini.nvim’ functionality
----@field files? table          Navigate and manipulate file system
----@field git? table            Git integration
----@field input? table          Get user input
----@field jump? table           Jump to next/previous single character
----@field jump2d? table         Jump within visible lines
----@field misc? table           Miscellaneous functions
----@field pick? table           Pick anything
----@field sessions? table       Session management
----@field visits? table         Track and reuse file system visits
----@field animate? table        Animate common Neovim actions
----@field base16? table         Base16 colorscheme creation
----@field colors? table         Tweak and save any color scheme
----@field cursorword? table     Autohighlight word under cursor
----@field hipatterns? table     Highlight patterns in text
----@field hues? table           Generate configurable color scheme
----@field icons? table          Icon provider
----@field indentscope? table    Visualize and work with indent scope
----@field map? table            Window with buffer text overview
----@field notify? table         Show notifications
----@field starter? table        Start screen
----@field statusline? table     Statusline
----@field tabline? table        Tabline
----@field trailspace? table     Trailspace (highlight and remove)
----@field doc? table            Generate Neovim help files
----@field fuzzy? table          Fuzzy matching
----@field test? table           Test Neovim plugins
+---@field ai? table|"defaults"          Extend and create a/i textobjects
+---@field align? table|"defaults"       Align text interactively
+---@field comment? table|"defaults"     Comment lines
+---@field completion? table|"defaults"  Completion and signature help
+---@field keymap? table|"defaults"      Special key mappings
+---@field move? table|"defaults"        Move any selection in any direction
+---@field operators? table|"defaults"   Text edit operators
+---@field pairs? table|"defaults"       Autopairs
+---@field snippets? table|"defaults"    Manage and expand snippets
+---@field splitjoin? table|"defaults"   Split and join arguments
+---@field surround? table|"defaults"    Surround actions
+---@field basics? table|"defaults"      Common configuration presets
+---@field bracketed? table|"defaults"   Go forward/backward with square brackets
+---@field bufremove? table|"defaults"   Remove buffers
+---@field clue? table|"defaults"        Show next key clues
+---@field cmdline? table|"defaults"     Command line tweaks
+---@field deps? table|"defaults"        Plugin manager
+---@field diff? table|"defaults"        Work with diff hunks
+---@field extra? table|"defaults"       Extra ‘mini.nvim’ functionality
+---@field files? table|"defaults"       Navigate and manipulate file system
+---@field git? table|"defaults"         Git integration
+---@field input? table|"defaults"       Get user input
+---@field jump? table|"defaults"        Jump to next/previous single character
+---@field jump2d? table|"defaults"      Jump within visible lines
+---@field misc? table|"defaults"        Miscellaneous functions
+---@field pick? table|"defaults"        Pick anything
+---@field sessions? table|"defaults"    Session management
+---@field visits? table|"defaults"      Track and reuse file system visits
+---@field animate? table|"defaults"     Animate common Neovim actions
+---@field base16? table|"defaults"      Base16 colorscheme creation
+---@field colors? table|"defaults"      Tweak and save any color scheme
+---@field cursorword? table|"defaults"  Autohighlight word under cursor
+---@field hipatterns? table|"defaults"  Highlight patterns in text
+---@field hues? table|"defaults"        Generate configurable color scheme
+---@field icons? table|"defaults"       Icon provider
+---@field indentscope? table|"defaults" Visualize and work with indent scope
+---@field map? table|"defaults"         Window with buffer text overview
+---@field notify? table|"defaults"      Show notifications
+---@field starter? table|"defaults"     Start screen
+---@field statusline? table|"defaults"  Statusline
+---@field tabline? table|"defaults"     Tabline
+---@field trailspace? table|"defaults"  Trailspace (highlight and remove)
+---@field doc? table|"defaults"         Generate Neovim help files
+---@field fuzzy? table|"defaults"       Fuzzy matching
+---@field test? table|"defaults"        Test Neovim plugins
 
 ---@class MiniInOne
 ---@field setup fun(config: MiniInOneConfig): MiniInOne

@@ -25,7 +25,10 @@ function M.setup(config)
     end
 
     -- Call setup
-    if type(opts) == "table" then
+    if opts == "defaults" then
+      module.setup()
+      M[module_name] = module
+    elseif type(opts) == "table" then
       module.setup(opts)
       M[module_name] = module
     else
